@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 20rem;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video controls preload="none" poster="katze.webp" width="100%" height="auto">
+            <source src="beispiel-video.mp4" type="video/mp4"> Alternativtext
+        </video>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ipsum.</p>
+        <p>Libero mollitia suscipit asperiores eos iusto, adipisci ducimus facere reiciendis.</p>
+        <p>Vero ipsam dicta consectetur reprehenderit mollitia ipsa inventore? Impedit, sunt?</p>
+        <p>Minus reiciendis sunt consectetur odio a in ea distinctio et.</p>
+        <p>Alias quam fugit provident, quidem architecto quisquam deleniti sapiente magnam!</p>
+        <p>Qui, adipisci fugit! Tempora molestiae officiis nulla, reiciendis repellat facere!</p>
+        <p>Placeat exercitationem quis recusandae dolorum hic reiciendis quam voluptatum alias.</p>
+        <p>Iure aliquam ratione architecto aut repellat voluptatem, beatae modi perferendis!</p>
+        <p>Fugiat deleniti sunt quos ab saepe quia asperiores officiis cum.</p>
+        <p>Quasi dolorum molestias facilis vel dolores harum animi tenetur quo.</p>
+        <p>Qui, adipisci fugit! Tempora molestiae officiis nulla, reiciendis repellat facere!</p>
+        <p>Placeat exercitationem quis recusandae dolorum hic reiciendis quam voluptatum alias.</p>
+        <p>Iure aliquam ratione architecto aut repellat voluptatem, beatae modi perferendis!</p>
+        <p>Fugiat deleniti sunt quos ab saepe quia asperiores officiis cum.</p>
+        <p>Quasi dolorum molestias facilis vel dolores harum animi tenetur quo.</p>
+    </div>
+    <script>
+        const video = document.querySelector("video");
+        window.addEventListener("scroll", () => {
+            const videoTop = video.getBoundingClientRect().top;
+            const videoBottom = video.getBoundingClientRect().bottom;
+
+            if (videoTop < window.innerHeight && videoBottom >= 0) {
+                // Das Video ist sichtbar, also spielen wir es ab
+                video.play();
+            } else {
+                // Das Video ist nicht sichtbar, also pausieren wir es
+                video.pause();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

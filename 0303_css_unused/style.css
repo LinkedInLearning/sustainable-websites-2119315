@@ -1,0 +1,151 @@
+/* Grundlegende Formatierungen */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header und Footer über die gesamte Breite */
+.site-header,
+.site-footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.site-nav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.site-nav__item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.site-nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hauptteil zentrieren und Breite begrenzen */
+.intro,
+.tips {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.tip {
+  background: #fff;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tip__title {
+  color: #333;
+}
+
+.tip__description,
+.intro__text,
+.site-footer__text {
+  color: #666;
+}
+
+/* Bilder im Tip-Bereich */
+.tip__image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer spezifische Formatierungen */
+.site-footer__contact {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.site-footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+/* Formatierungen für nicht verwendete Klassen */
+
+/* Beispiel für eine nicht verwendete Klasse für einen Blog-Post */
+.blog-post {
+  background: #e9ecef;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-left: 4px solid #007bff;
+}
+
+.blog-post__title {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.blog-post__meta {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.blog-post__content {
+  margin-top: 1rem;
+}
+
+/* Beispiel für eine nicht verwendete Klasse für eine Galerie */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery__item {
+  flex: 1 1 200px;
+  border: 1px solid #ddd;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+}
+
+/* Beispiel für eine nicht verwendete Klasse für Buttons */
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Beispiel für eine nicht verwendete Klasse für Warnmeldungen */
+.alert {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert--warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert--success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}

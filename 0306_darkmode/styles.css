@@ -1,0 +1,39 @@
+:root {
+    --darkblue : #1e0154;
+    --white: #efefef;
+    --background-color:var(--white);
+    --text-color: var(--darkblue);
+    --button-background: var(--darkblue);
+    --button-color: var(--white);
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        --background-color: var(--darkblue);
+        --text-color:var(--white);
+        --button-background:var(--white);
+        --button-color: var(--darkblue);
+    }
+}
+body {
+    margin: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--button-color);
+    border: none;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
